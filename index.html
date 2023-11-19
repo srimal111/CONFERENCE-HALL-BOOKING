@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahaweli Authority Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #8e44ad, #2980b9);
+            color: #fff;
+        }
+
+        header {
+           
+            text-align: center;
+        }
+
+        section {
+          
+            text-align: center;
+        }
+
+        .card_one {
+            background: #cfffd5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            margin: auto;
+            text-align: left;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            margin: auto;
+            text-align: left;
+        }
+
+        button {
+           border-radius: 15px;
+           background-color: #8e44ad;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.5s ease;
+            width:100%;
+        }
+        h3,p,h2{
+        color: black;
+      
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>CONFERENCE HALL BOOKING</h1>
+        <!-- User Card -->
+
+        <div class="card_one">
+            <h2>Miss. Indrani Subasinghe</h2>
+            <h2>(IT Administrative Officer)</h2>
+            <h2>09 Floor</h2>
+            <p style="color: gray;">Main Conference Hall Booking & <br>Mini Conference Hall </p>
+            <p style="font-weight: bold;">In Com: <span id="a">253</span></p>
+            <p>Call Mobile: <span id="main_hall_mobile_line">071-4453874</span></p>
+        
+            <!-- Buttons -->
+            <button onclick="callNumber('main_hall_mobile_line')">Call Mobile</button>
+        
+            <script>
+                function callNumber(number, isMobile = false) {
+                    var prefix = isMobile ? 'tel:' : 'tel:';
+                    window.location.href = prefix + document.getElementById(number).textContent;
+                }
+            </script>
+        </div>
+        <hr>
+
+
+        <!-- More content goes here -->
+        <footer>
+            <p style="color: white;">Developmet & Publish by Department of IT - Sri lanka Mahaweli Aithority </p>
+        </footer>
+    </section>
+</body>
+</html>
