@@ -146,32 +146,63 @@
 <body>
 
     
-  
-
-
-        <!-- Add another card below -->
-        <h3 style="text-align:center;"><b>CONFERENCE HALL BOOKING<br></b><br><span class="st2"></span></h3>
-       
-        <div class="contact-card2">
-            
+    <div class="contact-container">
+        <h3 style="text-align:center;"><b>ADMINISTRATION & PROJECT PERSONAL MANAGEMENT<br> (PPM) DIVISION  </b><br><span class="st2">Floor No: 10</span></h3>
+        <div class="contact-card1">
             <div class="contact-details">
                 <div class="contact-image-container">
-                    <img class="contact-image" src="one.jpg" alt="Profile Image">
+                    <img class="contact-image1" src="R.png" alt="Profile Image">
                 </div>
                 <div>
-                    <div class="name">Miss.Indrani Subasinghe<br>
-                        <span class="disgnation">(IT Administrative Officer)</span><br>
+                    <div class="name">Office Contact<br>
+                       
                         <p>
-                         In.Com: <span id="">253</span><br> 
-                      
-                         Mobile : <span id="chb_mobile">071-4453874</span>                    
+                         LandLine : <span id="ppm_land">011-2684710</span><br>
+                         Email : <span id="email">mahawelienvmin@gmail.com</span>                    
                         </p>
                     </div>
                 </div>
             </div>
             <div class="contact-buttons">
-             
-                <button class="call-button" onclick="callNumber('chb_mobile')">Call Mobile</button>
+                <button class="call-button" onclick="callNumber('ppm_land')"> Call LandLine</button>
+                <button class="call-button2" onclick="openEmailApp()">Send Email</button>
+            </div>
+            <script>
+                function callNumber(number, isMobile = false) {
+                    var prefix = isMobile ? 'tel:' : 'tel:';
+                    window.location.href = prefix + document.getElementById(number).textContent;
+                }
+                function openEmailApp() {
+                    var email_one = document.getElementById('email').textContent;
+                    window.location.href = 'mailto:' + email_one;
+                }
+            </script>
+        </div>
+
+
+
+        <!-- Add another card below -->
+       
+       
+        <div class="contact-card2">
+            <div class="contact-details">
+                <div class="contact-image-container">
+                    <img class="contact-image" src="one.jpg" alt="Profile Image">
+                </div>
+                <div>
+                    <div class="name">Mrs. T.A. Gamage<br>
+                        <span class="disgnation">Additional Secretary<br>(PPM)</span><br>
+                        <p>
+                         In.Com: <span id="">210</span><br> 
+                         LandLine : <span id="asp_land">011-2675790</span><br>
+                         Mobile : <span id="asp_mobile">071-4448455</span>                    
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-buttons">
+                <button class="call-button" onclick="callNumber('asp_land')"> Call LandLine</button>
+                <button class="call-button" onclick="callNumber('asp_mobile')">Call Mobile</button>
             </div>
             <script>
                 function callNumber(number, isMobile = false) {
@@ -182,6 +213,36 @@
         </div>
 
         
+
+        <div class="contact-card">
+            <div class="contact-details">
+                <div class="contact-image-container">
+                    <img class="contact-image" src="one.jpg" alt="Profile Image">
+                </div>
+                <div>
+                    <div class="name">Mrs.H.K.G.Niroshana<br>
+                        <span class="disgnation">Assistant Secretary (Admin) </span><br>
+                        <p>
+                         In.Com: <span id="">238</span><br> 
+                         LandLine : <span id="asa_land">011-2687291</span><br>
+                         Mobile : <span id="asa_mobile">077-7003980</span>                    
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-buttons">
+                <button class="call-button" onclick="callNumber('asa_land')"> Call LandLine</button>
+                <button class="call-button" onclick="callNumber('asa_mobile')">Call Mobile</button>
+            </div>
+            <script>
+                function callNumber(number, isMobile = false) {
+                    var prefix = isMobile ? 'tel:' : 'tel:';
+                    window.location.href = prefix + document.getElementById(number).textContent;
+                }
+            </script>
+        </div>
+
+
 
 
 
