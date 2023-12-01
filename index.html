@@ -3,80 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahaweli Authority Landing Page</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
-            background: linear-gradient(45deg, #8e44ad, #2980b9);
-            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        header {
-           
-            text-align: center;
-        }
+        .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
 
-        section {
-          
-            text-align: center;
-        }
-
-        .card_one {
-            background: #cfffd5;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 300px;
-            margin: auto;
-            text-align: left;
-        }
-        .card {
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 300px;
-            margin: auto;
-            text-align: left;
-        }
-
-        button {
-           border-radius: 15px;
-           background-color: #8e44ad;
-            color: #fff;
+        .contact-card1 {
+            width: 350px;
+            height: 100px;
             border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
+            display: flex;
+            justify-content: space-between; /* Align items with space between them */
+            align-items: center; /* Center vertically */
+            border-radius: 10px;
+            background-color: #f0f0f0;
+            margin-bottom: 5px; /* Add margin between cards */
+        }
+        .contact-card2 {
+            width: 350px;
+            height: 115px;
+            border: none;
+            display: flex;
+            justify-content: space-between; /* Align items with space between them */
+            align-items: center; /* Center vertically */
+            border-radius: 10px;
+            background-color: #f0f0f0;
+            margin-bottom: 5px; /* Add margin between cards */
+        }
+        .contact-card {
+            width: 340px;
+            height: 85px;
+            border: none;
+            display: flex;
+            justify-content: space-between; /* Align items with space between them */
+            align-items: center; /* Center vertically */
+            border-radius: 10px;
+            background-color: #f0f0f0;
+            margin-bottom: 5px; /* Add margin between cards */
+        }
+
+        .contact-details {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .contact-image-container {
+            width: 50px;
+            height: 60px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+        .contact-image1 {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            
+        }
+        .contact-image {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .name {
+            font-size: 13px;
+            font-weight: bold;
             margin-top: 10px;
-            transition: background 0.5s ease;
-            width:100%;
         }
-        h3,p,h2{
-        color: black;
-      
+
+        .job-title {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 5px;
         }
+
+        
+        .contact-buttons {
+            display: flex;
+            flex-direction: column; /* Align buttons vertically */
+            align-items: flex-end; /* Align buttons to the right */
+            padding: 10px;
+        }
+
+        .call-button {
+            margin-top: 5px; /* Add spacing between buttons */
+            padding: 5px 10px;
+            background-color: rgb(60, 60, 148);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 90px;
+            height: 25px;
+            font-size: x-small;
+        }
+        .call-button2 {
+            margin-top: 5px; /* Add spacing between buttons */
+            padding: 5px 10px;
+            background-color:orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 90px;
+            height: 25px;
+            font-size: x-small;
+        }
+        p {
+            color: gray;
+            font-size: x-small;
+        }
+        .disgnation{
+            font-size: x-small;
+            color: gray;
+        }
+        .st2{
+            color: gray;
+        }
+       
     </style>
 </head>
 <body>
 
-    <section>
-        <h1>CONFERENCE HALL BOOKING</h1>
-        <!-- User Card -->
+    <h3 style="text-align:center;"><b>CONFERENCE HALL BOOKING<br></b><br><span class="st2"></span></h3>
+  
 
-        <div class="card_one">
-            <h2>Miss. Indrani Subasinghe</h2>
-            <h2>(IT Administrative Officer)</h2>
-            <h2>09 Floor</h2>
-            <p style="color: gray;">Main Conference Hall Booking & <br>Mini Conference Hall </p>
-            <p style="font-weight: bold;">In Com: <span id="a">253</span></p>
-            <p>Call Mobile: <span id="main_hall_mobile_line">071-4453874</span></p>
-        
-            <!-- Buttons -->
-            <button onclick="callNumber('main_hall_mobile_line')">Call Mobile</button>
-        
+
+        <!-- Add another card below -->
+       
+       
+        <div class="contact-card2">
+            <div class="contact-details">
+                <div class="contact-image-container">
+                    <img class="contact-image" src="one.jpg" alt="Profile Image">
+                </div>
+                <div>
+                    <div class="name">Miss.Indrani Subasinghe<br>
+                        <span class="disgnation">(IT Administrative Officer)</span><br>
+                        <p>
+                         In.Com: <span id="">253</span><br> 
+                      
+                         Mobile : <span id="chb_mobile">071-4453874</span>                    
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-buttons">
+             
+                <button class="call-button" onclick="callNumber('chb_mobile')">Call Mobile</button>
+            </div>
             <script>
                 function callNumber(number, isMobile = false) {
                     var prefix = isMobile ? 'tel:' : 'tel:';
@@ -84,13 +179,17 @@
                 }
             </script>
         </div>
-        <hr>
+
+        
 
 
-        <!-- More content goes here -->
-        <footer>
-            <p style="color: white;">Developmet & Publish by Department of IT - Sri lanka Mahaweli Aithority </p>
-        </footer>
-    </section>
+
+
+
+
+
+
+    </div>
+
 </body>
 </html>
